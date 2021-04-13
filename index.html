@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header> <h2 class="title">Whack A Mole</h2></header>
+        <section class="mole-box">
+            <div id="mole" class="mole mole-1">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-2">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mol-3" class="mole mole-3">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-4">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-5">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-6">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-7">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-8">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+            <div id="mole" class="mole mole-9">
+                <img src="./assets/mole.jpg" alt="" srcset="">
+            </div>
+        </section>
+        <div id="score" class="score">
+            <h4>Score: <span class="scoreNumber"></span></h4>
+        </div>
+        <footer class="footer">
+            <div class="buttons">
+                <button class="btn btn-primary" type="button" onclick="startGame()">Start</button>
+                <button class="btn btn-warning" type="button" onclick="stopGame()">Stop</button>
+                <button class="btn btn-danger" type="button" onclick="resetGame()">Reset</button>
+            </div>
+        </footer>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
