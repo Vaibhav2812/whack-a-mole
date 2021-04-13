@@ -1,5 +1,6 @@
 const moleElements = document.querySelectorAll('.mole');
 const scoreEle = document.getElementById('score');
+let isGameInProgress = false;
 let score = 0;
 let gameInterval;
 
@@ -27,6 +28,10 @@ function getRandomNumber() {
 }
 
 function startGame() {
+    if(isGameInProgress) {
+        return;
+    }
+    isGameInProgress = true;
      gameInterval =  setInterval(() => {
         const moleElement = moleElements[getRandomNumber()];
         if(!moleElement) {
@@ -38,12 +43,13 @@ function startGame() {
         } else {
             img.style.display = 'block'; 
         }
-    }, getRandomTimoout());
+    }, 1500);
 }
 function stopGame() {
     if(!gameInterval) {
      return;
     }
+    isGameInProgress = false;
     clearInterval(gameInterval);
 }
 
